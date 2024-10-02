@@ -43,7 +43,7 @@ const calculateBill = () => {
 
   // update the perPersonTotal on DOM & show it to user
 
-  perPersonTotal.textContent = `₹${billAmountPerPerson.toLocaleString('en-IN')}`
+  perPersonTotal.textContent = `₹${billAmountPerPerson.toFixed(2).toLocaleString('en-IN')}`
 }
 
 // ** Splits the bill between more people **
